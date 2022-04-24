@@ -6,6 +6,7 @@ public class Triangle extends  Figure{
         super(size1, size2);
     }
 
+
     @Override
     public double Area() {
         return (getSize1() * getSize2()) / 2;

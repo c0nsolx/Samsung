@@ -6,6 +6,7 @@ public class Circle extends Figure{
         super(size1, size2);
     }
 
+
     @Override
     public double Area() {
         return Math.PI * (getSize1()*getSize1());

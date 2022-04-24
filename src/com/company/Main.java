@@ -13,6 +13,7 @@ public class Main {
         System.out.println("Enter Circle properties: ");
         Figure figureCircle = new Circle(scanner.nextDouble(), 0);
 
+
         Figure[] figures = new Figure[3];
         figures[0] = figureTriangle;
         figures[1] = figureRectangle;
@@ -22,6 +23,10 @@ public class Main {
             if (figures[i].Area() > max){
                 max = figures[i].Area();
             }
+        }
+
+        for (int i = 0; i < figures.length; i++) {
+            System.out.println("Figure number " + (i+1) + "'s area: " + figures[i].Area());
         }
 
 
