@@ -28,6 +28,11 @@ public class Main {
         for (int i = 0; i < figures.length; i++) {
             System.out.println("Figure number " + (i+1) + "'s area: " + figures[i].Area());
         }
+        double sum = 0;
+        for (Figure figure : figures) {
+            sum = sum + figure.Area();
+        }
+        System.out.println("Average of figures' areas: " + (sum / Figure.counter));
 
 
         System.out.println("Area of largest figure: " + max);
