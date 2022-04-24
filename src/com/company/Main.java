@@ -23,7 +23,9 @@ public class Main {
                 max = figures[i].Area();
             }
         }
-        System.out.println("Area of largest figure: " + max);
 
+
+        System.out.println("Area of largest figure: " + max);
+        System.out.println("Number of Figures: " + Figure.counter);
     }
 }

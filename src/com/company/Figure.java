@@ -3,10 +3,12 @@ package com.company;
 public class Figure {
     private double size1;
     private double size2;
+    static int counter;
 
     Figure(double size1, double size2){
         this.size1 = size1;
         this.size2 = size2;
+        counter++;
     }
 
     public double getSize1() {
